@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/kendayao/Burger/issues"
   },
-  "homepage": "https://github.com/kendayao/Burger#readme"
+  "homepage": "https://github.com/kendayao/Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
 }
