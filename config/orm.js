@@ -7,7 +7,7 @@ var orm={
     var query= "SELECT * FROM " + table + ";"
         connection.query(query,function(err,data){
             if (err) throw err;
-            cb(result)
+            cb(data)
         });
 
     },

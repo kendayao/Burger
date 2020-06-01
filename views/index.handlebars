@@ -1,19 +1,19 @@
 <h2>Burger Buffet!</h2>
 
+
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
         <ul>
-            {{#each burger}}
+            {{#each burgers}}
+            <li>
+            <p>{{id}}. {{burger_name}}</p><button class="change-sleep">Devour
+	          </button>
             {{/each}}
+            </li>
         </ul>
-    </div>
-    <div class="col-sm-6">
-        <ul>
-            {{#each burger}}
-            {{/each}}
-        </ul>
-
+    </div> 
+   
     <form>
     <label for="burger_name">New Burger</label><br>
     <input type="text" id="burger" name="newburger" placeholder="Type New Burger Heres"><br>
@@ -23,6 +23,6 @@
   
     </div>
   </div>
-</div>
+</div> 
 
 
