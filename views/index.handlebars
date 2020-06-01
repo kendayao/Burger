@@ -1,28 +1,35 @@
-<h2>Burger Buffet!</h2>
+<h1>Burger Buffet!</h1>
+
+<img class="burger-pic" src="/assets/images/burger.png" alt="burger-image">
+<p class="attribution">Icon made by Freepik from www.flaticon.com</p>
+
+
 
 
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
+        <h4>Burgers Available to eat</h4>
         <ul>
             {{#each burgers}}
               {{#unless devoured}}
             <li>
-            <p>{{id}}. {{burger_name}}</p><button class="change-devour" data-id="{{id}}"
+            <p>{{burger_name}}<button class="change-devour" data-id="{{id}}"
             >Eat!
-	          </button>
+	          </button></p>
               {{/unless}}
             {{/each}}
             </li>
         </ul>
     </div>
   <div class="col-sm-6">
+    <h4>Burgers Eaten</h4>
     <ul>
             {{#each burgers}}
               {{#if devoured}}
             <li>
-            <p>{{id}}. {{burger_name}}</p><button class="throw-up" data-id="{{id}}">Throw Up!
-	          </button><button class="delete-burger" data-id="{{id}}">Delete Burger!</button>
+            <p>{{burger_name}}<button class="throw-up" data-id="{{id}}">Throw Up!
+	          </button><button class="delete-burger" data-id="{{id}}">Delete Burger!</button></p>
               {{/if}}
             {{/each}}
             </li>
@@ -35,9 +42,9 @@
 </div> 
 
 <form class="add-burger">
-    <label for="burger_name">New Burger</label><br>
-    <input type="text" id="burger" name="newburger" placeholder="Type New Burger Here"><br>
-    <button id="addburger" type="submit">Add Burger</button>
+    <label for="burger_name">Add New Burger</label><br>
+    <input type="text" id="burger" name="newburger" placeholder="Type New Burger Here"><button id="addburger" type="submit">Add Burger</button>
+    
     </form>
 
 
