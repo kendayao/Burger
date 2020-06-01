@@ -1,3 +1,4 @@
+// runs post request when add burger button is clicked
 $(".add-burger").on("submit", function(event){
    event.preventDefault();
     
@@ -20,7 +21,7 @@ $(".add-burger").on("submit", function(event){
 });
 
 
-
+// put request when change eat button is clicked (changes devour to true)
 $(".change-devour").on("click", function(event){
     event.preventDefault();
     var id =$(this).data("id")
@@ -39,6 +40,7 @@ $(".change-devour").on("click", function(event){
 
 })
 
+// put request when change eat button is clicked (changes devour to false)
 $(".throw-up").on("click", function(event){
     event.preventDefault();
     var id =$(this).data("id")
@@ -57,6 +59,7 @@ $(".throw-up").on("click", function(event){
 
 })
 
+// delete burger when delete button is clicked
 $(".delete-burger").on("click", function(event){
     event.preventDefault();
     var id =$(this).data("id")

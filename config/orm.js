@@ -1,5 +1,6 @@
-var connection = require("../config/connection.js");
 
+// ORM functions
+var connection = require("../config/connection.js");
 
 var orm={
 
@@ -14,8 +15,6 @@ var orm={
 
     insertOne: function(table, cols, vals, cb){
     var query="INSERT INTO " + table + " ("+cols.toString()+") VALUES (?,?)"
-
-    
     connection.query(query, vals, function(data){
         cb(data)
     })
@@ -24,7 +23,10 @@ var orm={
     updateOne: function(table, colValue, condition, cb){
     var query="UPDATE "+table+" SET "+colValue+" WHERE "+condition
     console.log(query)
-    connection.query(query, function(data){
+    connection.query(query, function(err,data){
+        if (err) {
+            throw err;
+          }
         cb(data)
     })
     },
@@ -32,11 +34,10 @@ var orm={
     deleteOne: function(table, condition, cb){
         var query="DELETE FROM "+table + " WHERE "+ condition;
         console.log(query)
-        connection.query(query, function(err,result){
+        connection.query(query, function(err, result){
             if (err) {
                 throw err;
               }
-           console.log(result)
             cb(result)
         });
     }
