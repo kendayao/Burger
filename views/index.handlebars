@@ -6,23 +6,38 @@
     <div class="col-sm-6">
         <ul>
             {{#each burgers}}
+              {{#unless devoured}}
             <li>
-            <p>{{id}}. {{burger_name}}</p><button class="change-sleep">Devour
+            <p>{{id}}. {{burger_name}}</p><button class="change-devour" data-id="{{id}}"
+            >Eat!
 	          </button>
+              {{/unless}}
+            {{/each}}
+            </li>
+        </ul>
+    </div>
+  <div class="col-sm-6">
+    <ul>
+            {{#each burgers}}
+              {{#if devoured}}
+            <li>
+            <p>{{id}}. {{burger_name}}</p><button class="change-sleep">Throw Up!
+	          </button>
+              {{/if}}
             {{/each}}
             </li>
         </ul>
     </div> 
    
-    <form>
-    <label for="burger_name">New Burger</label><br>
-    <input type="text" id="burger" name="newburger" placeholder="Type New Burger Heres"><br>
-    <button type="submit">Add Cat</button>
-    </form>
-
-  
+    
     </div>
   </div>
 </div> 
+
+<form class="add-burger">
+    <label for="burger_name">New Burger</label><br>
+    <input type="text" id="burger" name="newburger" placeholder="Type New Burger Here"><br>
+    <button id="addburger" type="submit">Add Burger</button>
+    </form>
 
 

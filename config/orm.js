@@ -13,14 +13,21 @@ var orm={
     },
 
     insertOne: function(table, cols, vals, cb){
-        
+    var query="INSERT INTO " + table + " ("+cols.toString()+") VALUES (?,?)"
 
+    
+    connection.query(query, vals, function(data){
+        cb(data)
+    })
     },
 
-    updateOne: function(table, cols, conition, cb){
-
-
-    },
+    updateOne: function(table, colValue, condition, cb){
+    var query="UPDATE "+table+" SET "+colValue+" WHERE "+condition
+    console.log(query)
+    connection.query(query, function(data){
+        cb(data)
+    })
+    }
 
 }
 
