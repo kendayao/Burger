@@ -21,8 +21,8 @@
             {{#each burgers}}
               {{#if devoured}}
             <li>
-            <p>{{id}}. {{burger_name}}</p><button class="change-sleep">Throw Up!
-	          </button>
+            <p>{{id}}. {{burger_name}}</p><button class="throw-up" data-id="{{id}}">Throw Up!
+	          </button><button class="delete-burger" data-id="{{id}}">Delete Burger!</button>
               {{/if}}
             {{/each}}
             </li>

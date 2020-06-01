@@ -39,12 +39,18 @@ burger.updateOne(devouredState, condition, function(result){
     res.send("sent")
 
 });
-})
+});
 
 
 
 
-router.delete
+router.delete("/api/burgers/:id", function(req,res){
+    var condition="id = "+req.params.id;
+    burger.deleteOne(condition, function(result){
+        res.send("sent")
+    });
+
+});
 
 // if (result.affectedRows == 0) {
 //     // If no rows were changed, then the ID must not exist, so 404
