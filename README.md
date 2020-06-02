@@ -65,6 +65,6 @@ For any questions, please contact kendayao at kendayao@gmail.com
 
 ## Deployed Application URL
 
-Link to Deployed Application: https://youtu.be/u9cqWbXgdTg
+https://frozen-beyond-53655.herokuapp.com/
 
 <img src="public/assets/images/burgerapp.png" width="500" height="350">
