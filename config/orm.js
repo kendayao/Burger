@@ -22,7 +22,6 @@ var orm={
 
     updateOne: function(table, colValue, condition, cb){
     var query="UPDATE "+table+" SET "+colValue+" WHERE "+condition
-    console.log(query)
     connection.query(query, function(err,data){
         if (err) {
             throw err;
@@ -33,7 +32,6 @@ var orm={
 
     deleteOne: function(table, condition, cb){
         var query="DELETE FROM "+table + " WHERE "+ condition;
-        console.log(query)
         connection.query(query, function(err, result){
             if (err) {
                 throw err;
