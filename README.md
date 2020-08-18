@@ -2,11 +2,12 @@
 
 ## Description
 
-This is a fun burger logger application. This application was created using MySQL, Node, Express, Handelbars, and a created ORM.
+Burger a fun burger logger responsive web application. Type any burger you enjoy eating and devour it!
 
 ## Table of Contents
 
 * [Description](#description)
+* [Technology](#technology)
 * [User Story](#user-story)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -16,6 +17,17 @@ This is a fun burger logger application. This application was created using MySQ
 * [Questions](#questions)
 * [Deployed Application URL](#deployed-application-URL)
 
+## Technology
+
+- MySQL
+- Node
+- Express
+- HTML 
+- CSS
+- ORM
+- Bootstrap
+- AJAX
+- jQuery
 
 
 ## User Story
@@ -65,6 +77,8 @@ For any questions, please contact kendayao at kendayao@gmail.com
 
 ## Deployed Application URL
 
-https://frozen-beyond-53655.herokuapp.com/
+Deployed application link: https://frozen-beyond-53655.herokuapp.com/
+
+Video demo link: https://giphy.com/gifs/QVgTZHvQ31yR6Epn6g/fullscreen
 
 <img src="public/assets/images/burgerapp.png" width="500" height="350">
