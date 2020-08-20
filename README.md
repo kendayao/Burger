@@ -2,7 +2,7 @@
 
 ## Description
 
-Burger a fun burger logger responsive web application. Type any burger you enjoy eating and devour it!
+Burger is a fun burger logger responsive web application. Type any burger you enjoy eating and devour it!
 
 ## Table of Contents
 
